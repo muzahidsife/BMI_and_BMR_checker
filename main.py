@@ -61,25 +61,26 @@ def bmr_bmi():
         weight = float(input("Whats your  weight(kg) : "))
         height = float(input("whats your height(m) : "))
         bmi = weight/height**2
-        if bmi < 18.5:
+
+        if bmi <= 18.5:
             print(f"Your BMI is {bmi} :\n"
                   "Underweight : BMI indicates below-normal body weight, which may warrant investigation into potential underlying health concerns")
 
-        elif 18.5 < bmi > 24.9:
+        elif 18.5 <= bmi <= 24.9:
             print(f"Your BMI is {bmi} :\n"
                   "Normal weight: BMI falls within the healthy range, indicating a balanced body weight for height.")
-        elif 25 < bmi > 29.9:
+        elif 25 <= bmi <= 29.9:
             print(f"Your BMI is {bmi} :\n"
                   "Overweight : BMI suggests excess body weight, highlighting the need for lifestyle changes to improve overall health.")
-        elif 30 < bmi > 34.9:
+        elif 30 <= bmi <= 34.9:
             print(f"Your BMI is {bmi} :\n"
                   "First stage of obesity. Selective diet and exercise are necessary. ")
 
-        elif 35 < bmi > 39.9:
+        elif 35 <= bmi <= 39.9:
             print(f"Your BMI is {bmi} :\n"
                   "2nd level of obesity. Moderate diet and exercise are necessary.")
 
-        elif 40 < bmi :
+        elif 40 <= bmi :
             print(f"Your BMI is {bmi} :\n"
                   "Excess weight. Fear of death. A doctor's consultation is required.")
         else:
